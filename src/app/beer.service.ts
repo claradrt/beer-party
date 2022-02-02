@@ -1,21 +1,25 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable, of } from 'rxjs';
+import { first, Observable } from 'rxjs';
 import { Beer } from './beer';
-import { BEERS } from './mock-beers';
 
 @Injectable({
   providedIn: 'root',
 })
 export class BeerService {
+  private beersUrl = 'https://api.punkapi.com/v2/beers';
+
   getBeers(): Observable<Beer[]> {
-    const beers = of(BEERS);
-    return beers;
+    return this.http.get<Beer[]>(this.beersUrl);
   }
 
-  getBeer(id: number): Observable<Beer> {
-    const beer = BEERS.find((b) => b.id === id)!;
-    return of(beer);
+  getBeer(id: number): Observable<Beer[]> {
+    const beerDetailsUrl = `https://api.punkapi.com/v2/beers?ids=${id}`;
+    //Why does "first()" still return an array?
+    return this.http.get<Beer[]>(beerDetailsUrl).pipe(first());
   }
 
-  constructor() {}
+  constructor(private http: HttpClient) {
+    this.getBeers;
+  }
 }

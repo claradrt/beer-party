@@ -24,6 +24,9 @@ export class BeerDetailComponent implements OnInit {
 
   getBeer(): void {
     const id = Number(this.route.snapshot.paramMap.get('id'));
-    this.beerService.getBeer(id).subscribe((beer) => (this.beer = beer));
+    this.beerService.getBeer(id).subscribe((beer) => {
+      this.beer = beer[0];
+      console.log(this.beer);
+    });
   }
 }

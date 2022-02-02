@@ -1,9 +1,16 @@
 <div class="container">
   <h2>List Of Beers</h2>
-  <ul class="beers row">
-    <li class="col" *ngFor="let beer of beers">
-      <span class="badge">{{ beer.id }}</span> {{ beer.name }}
-      <img src="{{ beer.image_url }}" alt="" />
-    </li>
-  </ul>
+  <div class="beers-list mt-3">
+    <ul class="row text-center">
+      <li class="col-md-4 beer" *ngFor="let beer of beers">
+        <div class="beer-image-wrapper">
+          <img src="{{ beer.image_url }}" alt="" />
+        </div>
+        <div>
+          <span>{{ beer.name }} <br /></span>
+          <span>"{{ beer.tagline }}"</span>
+        </div>
+      </li>
+    </ul>
+  </div>
 </div>

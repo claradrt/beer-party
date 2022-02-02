@@ -11,13 +11,13 @@ export const BEERS: BeerSummary[] = [
     id: 2,
     name: 'Buzz2',
     tagline: 'A Real Bitter Experience.',
-    image_url: 'https://images.punkapi.com/v2/keg.png',
+    image_url: 'https://images.punkapi.com/v2/2.png',
   },
   {
     id: 3,
     name: 'Buzz3',
     tagline: 'A Real Bitter Experience.',
-    image_url: 'https://images.punkapi.com/v2/keg.png',
+    image_url: 'https://images.punkapi.com/v2/4.png',
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ export const BEERS: BeerSummary[] = [
     id: 5,
     name: 'Buzz5',
     tagline: 'A Real Bitter Experience.',
-    image_url: 'https://images.punkapi.com/v2/keg.png',
+    image_url: 'https://images.punkapi.com/v2/100.png',
   },
   {
     id: 6,

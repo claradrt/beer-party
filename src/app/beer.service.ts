@@ -12,5 +12,10 @@ export class BeerService {
     return beers;
   }
 
+  getBeer(id: number): Observable<Beer> {
+    const beer = BEERS.find((b) => b.id === id)!;
+    return of(beer);
+  }
+
   constructor() {}
 }

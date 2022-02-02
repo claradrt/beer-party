@@ -1,3 +1,5 @@
 <div *ngIf="beer">
-  <h2>{{ beer.name | uppercase }} details</h2>
+  <div class="det-image-wrapper"><img src="{{ beer.image_url }}" alt="" /></div>
+  <h2>{{ beer.name | uppercase }}</h2>
+  <span class="font-italic">{{ beer.tagline }}</span>
 </div>

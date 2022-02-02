@@ -9,11 +9,6 @@ import { BeerService } from '../beer.service';
 })
 export class BeersComponent implements OnInit {
   beers: Beer[] = [];
-  selectedBeer?: Beer;
-
-  onSelect(beer: Beer): void {
-    this.selectedBeer = beer;
-  }
 
   getBeers(): void {
     this.beerService.getBeers().subscribe((beers) => (this.beers = beers));

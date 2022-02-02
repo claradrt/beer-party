@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { BeerSummary } from '../beer';
+import { Beer } from '../beer';
 
 @Component({
   selector: 'app-beer-detail',
@@ -7,7 +7,7 @@ import { BeerSummary } from '../beer';
   styleUrls: ['./beer-detail.component.css'],
 })
 export class BeerDetailComponent implements OnInit {
-  @Input() beer?: BeerSummary;
+  @Input() beer?: Beer;
   constructor() {}
 
   ngOnInit(): void {}

@@ -10,8 +10,11 @@
           <span>{{ beer.name }} <br /></span>
           <span>"{{ beer.tagline }}"</span>
         </div>
-        <div class="overview"><button>DETAILS</button></div>
+        <div class="overview">
+          <button (click)="onSelect(beer)">DETAILS</button>
+        </div>
       </li>
     </ul>
   </div>
+  <app-beer-detail [beer]="selectedBeer"></app-beer-detail>
 </div>

@@ -1,4 +1,12 @@
+<video
+  autoplay
+  muted
+  loop
+  oncanplay="this.play()"
+  onloadedmetadata="this.muted = true"
+  class="video"
+  src="/assets/beer-pouring.mp4"
+></video>
 <h1 class="text-center mt-2">{{ title }}</h1>
-<video autoplay muted loop class="video" src="/assets/beer-pouring.mp4"></video>
 <app-beers></app-beers>
 <router-outlet></router-outlet>

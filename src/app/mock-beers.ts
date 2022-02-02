@@ -1,4 +1,5 @@
 import { BeerSummary } from './beer';
+import { BeerDetails } from './beer';
 
 export const BEERS: BeerSummary[] = [
   {
@@ -54,5 +55,56 @@ export const BEERS: BeerSummary[] = [
     name: 'Buzz9',
     tagline: 'A Real Bitter Experience.',
     image_url: 'https://images.punkapi.com/v2/keg.png',
+  },
+];
+
+export const BEERSDETAILS: BeerDetails[] = [
+  {
+    id: 1,
+    first_brewed: '09/2007',
+    description:
+      'A light, crisp and bitter IPA brewed with English and American hops. A small batch brewed only once.',
+    abv: 4.5,
+    ibu: 60,
+  },
+  {
+    id: 2,
+    first_brewed: '10/2007',
+    description:
+      'A light, crisp and bitter IPA brewed with English and American hops. A small batch brewed only once.',
+    abv: 4.5,
+    ibu: 60,
+  },
+  {
+    id: 3,
+    first_brewed: '11/2007',
+    description:
+      'A light, crisp and bitter IPA brewed with English and American hops. A small batch brewed only once.',
+    abv: 4.5,
+    ibu: 60,
+  },
+  {
+    id: 4,
+    first_brewed: '12/2007',
+    description:
+      'A light, crisp and bitter IPA brewed with English and American hops. A small batch brewed only once.',
+    abv: 4.5,
+    ibu: 60,
+  },
+  {
+    id: 5,
+    first_brewed: '01/2008',
+    description:
+      'A light, crisp and bitter IPA brewed with English and American hops. A small batch brewed only once.',
+    abv: 4.5,
+    ibu: 60,
+  },
+  {
+    id: 6,
+    first_brewed: '02/2009',
+    description:
+      'A light, crisp and bitter IPA brewed with English and American hops. A small batch brewed only once.',
+    abv: 4.5,
+    ibu: 60,
   },
 ];

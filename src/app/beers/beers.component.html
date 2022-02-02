@@ -1,0 +1,9 @@
+<div class="container">
+  <h2>List Of Beers</h2>
+  <ul class="beers row">
+    <li class="col" *ngFor="let beer of beers">
+      <span class="badge">{{ beer.id }}</span> {{ beer.name }}
+      <img src="{{ beer.image_url }}" alt="" />
+    </li>
+  </ul>
+</div>

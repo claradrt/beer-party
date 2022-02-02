@@ -2,7 +2,7 @@
   <h2>List Of Beers</h2>
   <div class="beers-list mt-3">
     <ul class="row text-center">
-      <li class="col-md-4 beer" *ngFor="let beer of beers">
+      <li class="col-md-4 beer-wrapper" *ngFor="let beer of beers">
         <div class="beer-image-wrapper">
           <img src="{{ beer.image_url }}" alt="" />
         </div>
@@ -10,6 +10,7 @@
           <span>{{ beer.name }} <br /></span>
           <span>"{{ beer.tagline }}"</span>
         </div>
+        <div class="overview"><button>DETAILS</button></div>
       </li>
     </ul>
   </div>

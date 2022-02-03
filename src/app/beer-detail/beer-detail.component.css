@@ -40,6 +40,61 @@
 }
 
 .beer-details .info-wrapper .description {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.5;
+  font-weight: 200;
+}
+
+.beer-details .beer-unit-wrapper {
+  position: relative;
+  display: inline-block;
+  margin: 20px 30px 30px 0px;
+  font-size: 18px;
+}
+
+.beer-details .beer-unit {
+  border: 1px solid black;
+  border-radius: 4px;
+  margin: 5px;
+  padding: 5px 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.beer-details .more-info {
+  border-bottom: 1px dotted black;
+  cursor: help;
+  position: relative;
+}
+
+.beer-details .tooltips {
+  visibility: hidden;
+  width: 120px;
+  background-color: #403a27;
+  color: white;
+  font-family: "Arimo", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px 5px;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 105%;
+  font-weight: 200;
+  line-height: 1.2;
+}
+
+.beer-details .beer-unit-wrapper i:hover .tooltips,
+.beer-details .more-info:hover .tooltips {
+  visibility: visible;
+}
+
+.beer-details .details {
+  line-height: 2;
+  font-size: 18px;
+}
+
+.beer-details .details strong {
+  font-weight: 400;
 }

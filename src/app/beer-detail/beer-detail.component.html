@@ -10,23 +10,53 @@
       <h2>{{ beer.name | uppercase }}</h2>
       <span class="font-italic tagline">{{ beer.tagline }}</span>
       <br />
+      <div class="beer-unit-wrapper">
+        <div class="d-inline-block beer-unit">
+          <strong>Abv:</strong> {{ beer.abv }}%
+        </div>
+        <i class="far fa-question-circle">
+          <div class="tooltips">
+            ABV, or alcohol by volume, is the standard measurement, used
+            worldwide, to assess the strength of a particular beer.
+          </div></i
+        >
+      </div>
+      <div class="beer-unit-wrapper">
+        <div class="d-inline-block beer-unit">
+          <strong>Ibu:</strong> {{ beer.ibu }}
+        </div>
+        <i class="far fa-question-circle">
+          <div class="tooltips">
+            IBU is an abbreviation for the International Bitterness Units scale,
+            a gauge of beer's bitterness.
+          </div></i
+        >
+      </div>
+
       <br />
       <span class="description">{{ beer.description }}</span>
-      <div class="mt-2">
-        <strong>First brewed:</strong> {{ beer.first_brewed }}
-        <br />
-        <strong>Abv:</strong> {{ beer.abv }}%<br />
-        <strong>Ibu:</strong>
-        {{ beer.ibu }}
-        <br />
+      <div class="details mt-3">
+        <strong>First brewed:</strong>
+        {{ beer.first_brewed }}
         <div>
-          <strong>Malt:</strong>
+          <strong class="more-info">
+            Malt:
+            <span class="tooltips">
+              Malt is grain that has been specially prepared for brewing.
+            </span>
+          </strong>
           <span>
             {{ getIngredientNames(beer.ingredients.malt).join(", ") }}
           </span>
         </div>
         <div>
-          <strong>Hops:</strong>
+          <strong class="more-info">
+            Hops:
+            <span class="tooltips">
+              Hops, also known as the alpha acid, are the cone-shaped flowers
+              from the plant Humulus Lupulus that are used in brewing beer.
+            </span>
+          </strong>
           <span>
             {{ getIngredientNames(beer.ingredients.hops).join(", ") }}
           </span>

@@ -8,7 +8,6 @@
 }
 
 .beers-list .beer-image-wrapper {
-  margin-bottom: 10px;
   padding: 20px 0;
 }
 
@@ -21,6 +20,14 @@
   padding: 20px 0;
   position: relative;
   overflow: hidden;
+}
+
+.beers-list .beer-basics {
+  font-size: 18px;
+}
+
+.beers-list .beer-name {
+  font-weight: 400;
 }
 
 .beers-list .overview {

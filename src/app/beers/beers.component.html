@@ -3,6 +3,11 @@
   <div class="beers-list mt-3">
     <ul class="row text-center">
       <li class="col-md-4 beer-wrapper" *ngFor="let beer of beers">
+        <div *ngIf="!beer" class="loading-sign">
+          <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+        </div>
         <div class="beer-image-wrapper">
           <img src="{{ beer.image_url }}" alt="" />
         </div>

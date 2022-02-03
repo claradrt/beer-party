@@ -4,6 +4,11 @@
   height: 100vh;
 }
 
+.beer-details .loading-sign {
+  margin: auto;
+  width: fit-content;
+}
+
 .beer-details .det-image-wrapper img {
   max-height: 500px;
 }

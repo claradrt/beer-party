@@ -8,9 +8,10 @@ import { BeersComponent } from './beers/beers.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BeerDetailComponent } from './beer-detail/beer-detail.component';
 import { HomeComponent } from './home/home.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
-  declarations: [AppComponent, BeersComponent, BeerDetailComponent, HomeComponent],
+  declarations: [AppComponent, BeersComponent, BeerDetailComponent, HomeComponent, NavbarComponent],
   imports: [BrowserModule, AppRoutingModule, NgbModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],

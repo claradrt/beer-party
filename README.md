@@ -6,22 +6,26 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Presentation
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+The requirements asked for a web application destined to Deale employees who are invited to a Beer party but don't know anything about beers.
 
-## Build
+This project consists of 3 different views:
+1. As per the requirements, one view lists the beers
+2. Also per the requirements, another view shows the details of a selected beer. 
+3. The extra  view was added as a personal decision and is a home page which is also the landing page. As a user experience, it is confusing to arrive on a page that is just a list of beers, which is why I tought of a home page to welcome the users. Moreover, the users targeted for this application know nothing about beer, I therefore took the liberty of adding a YouTube video in the home page to bring more information about beer.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+The following components were created for this application:
+1. Beers: responsible for displaying the beers fetched from the API
+2. Beer detail: responsible for displaying information about a specific beer fetched from the API
+3. Home: the landing page of the app, responsible for welcoming the user and displaying a YouTube video about how beer is made
+4. Navbar: responsible for the navigation across the app
 
-## Running unit tests
+The following services were created for this application:
+ 1. Beer service: responsible for getting the information of the beers through the Punk APIs
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Extra tools used in this application include: 
+- Punk Api: https://punkapi.com/documentation/v2
+- Bootstrap
+- Fontawesome
+- Google Fonts

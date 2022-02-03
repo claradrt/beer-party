@@ -3,6 +3,7 @@
   width: 100vw;
   height: 100vh;
   text-align: center;
+  margin-top: 60px;
   padding-top: 20px;
 }
 
@@ -18,4 +19,20 @@
 .welcome-page iframe {
   margin-top: 50px;
   max-width: 700px;
+}
+
+@media (max-width: 560px) {
+  .welcome-page .video-responsive {
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+  }
+
+  .welcome-page .video-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
 }

@@ -1,7 +1,7 @@
 .beer-details {
   background: rgb(190, 172, 116, 0.3);
   width: 100vw;
-  height: 100vh;
+  margin-top: 60px;
 }
 
 .beer-details .loading-sign {
@@ -102,4 +102,27 @@
 
 .beer-details .details strong {
   font-weight: 400;
+}
+
+@media (max-width: 400px) {
+  .beer-details .det-image-wrapper img {
+    max-height: 200px;
+  }
+
+  .beer-details .beer-unit-wrapper {
+    margin: 5px 15px 5px 0;
+  }
+
+  .beer-details .beer-unit {
+    padding: 5px 10px;
+    margin: 2px;
+  }
+
+  .beer-details .info-wrapper {
+    padding: 20px 5px;
+  }
+
+  .beer-details .info-wrapper .description {
+    font-size: 18px;
+  }
 }

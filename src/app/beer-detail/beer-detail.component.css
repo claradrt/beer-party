@@ -104,11 +104,7 @@
   font-weight: 400;
 }
 
-@media (max-width: 400px) {
-  .beer-details .det-image-wrapper img {
-    max-height: 200px;
-  }
-
+@media (max-width: 800px) {
   .beer-details .beer-unit-wrapper {
     margin: 5px 15px 5px 0;
   }
@@ -120,6 +116,15 @@
 
   .beer-details .info-wrapper {
     padding: 20px 5px;
+  }
+  .beer-details .det-image-wrapper img {
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 450px) {
+  .beer-details .det-image-wrapper img {
+    max-height: 200px;
   }
 
   .beer-details .info-wrapper .description {

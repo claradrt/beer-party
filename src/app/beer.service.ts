@@ -7,7 +7,7 @@ import { Beer } from './beer';
   providedIn: 'root',
 })
 export class BeerService {
-  private beersUrl = 'https://api.punkapi.com/v2/beers';
+  private beersUrl = 'https://api.punkapi.com/v2/beers?per_page=78';
 
   getBeers(): Observable<Beer[]> {
     return this.http.get<Beer[]>(this.beersUrl);

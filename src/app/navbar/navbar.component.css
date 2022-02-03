@@ -14,12 +14,13 @@
 
 .nav-bar .navlink:hover {
   background-color: rgb(190, 172, 116, 0.4);
+  cursor: pointer;
 }
 
-.nav-bar .navlink a {
+.nav-bar a {
   color: black;
 }
 
-.nav-bar .navlink a:hover {
+.nav-bar a:hover {
   text-decoration: none;
 }

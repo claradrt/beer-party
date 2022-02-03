@@ -40,6 +40,10 @@
   transition: 300ms ease-in-out;
 }
 
+.beers-list .overview a:hover {
+  text-decoration: none;
+}
+
 .beers-list .overview button:hover {
   opacity: 0.8;
 }

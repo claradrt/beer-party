@@ -1,3 +1,13 @@
+export interface Ingredient {
+  name: string;
+  amount: {
+    value: number;
+    unit: string;
+  };
+  add?: string;
+  attribute?: string;
+}
+
 export interface Beer {
   id: number;
   name: string;
@@ -7,4 +17,11 @@ export interface Beer {
   description: string;
   abv: number;
   ibu: number;
+  ingredients: {
+    malt: Ingredient[];
+    hops: Ingredient[];
+    yeast: string;
+  };
+  food_pairing: [];
+  brewers_tips: string;
 }

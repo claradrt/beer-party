@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Beer } from '../beer';
+import { Beer, Ingredient } from '../beer';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 
@@ -22,11 +22,24 @@ export class BeerDetailComponent implements OnInit {
     this.getBeer();
   }
 
+  getIngredientNames(ingredients: Ingredient[]): string[] {
+    return ingredients
+      .map((ingredient) => ingredient.name)
+      .filter(this.onlyUnique);
+  }
+
+  onlyUnique(value: string, index: number, self: string[]) {
+    return self.indexOf(value) === index;
+  }
+
   getBeer(): void {
     const id = Number(this.route.snapshot.paramMap.get('id'));
     this.beerService.getBeer(id).subscribe((beer) => {
       this.beer = beer[0];
-      console.log(this.beer);
     });
+  }
+
+  goBack(): void {
+    this.location.back();
   }
 }

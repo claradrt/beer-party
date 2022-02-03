@@ -1,5 +1,47 @@
-<div *ngIf="beer">
-  <div class="det-image-wrapper"><img src="{{ beer.image_url }}" alt="" /></div>
-  <h2>{{ beer.name | uppercase }}</h2>
-  <span class="font-italic">{{ beer.tagline }}</span>
+<div *ngIf="beer" class="container beer-details">
+  <button class="go-back-btn mt-2" (click)="goBack()">
+    <i class="fas fa-arrow-left"></i>
+  </button>
+  <div class="row mt-2">
+    <div class="det-image-wrapper col-auto">
+      <img src="{{ beer.image_url }}" alt="" class="img-fluid" />
+    </div>
+    <div class="col info-wrapper">
+      <h2>{{ beer.name | uppercase }}</h2>
+      <span class="font-italic tagline">{{ beer.tagline }}</span>
+      <br />
+      <br />
+      <span class="description">{{ beer.description }}</span>
+      <div class="mt-2">
+        <strong>First brewed:</strong> {{ beer.first_brewed }}
+        <br />
+        <strong>Abv:</strong> {{ beer.abv }}%<br />
+        <strong>Ibu:</strong>
+        {{ beer.ibu }}
+        <br />
+        <div>
+          <strong>Malt:</strong>
+          <span>
+            {{ getIngredientNames(beer.ingredients.malt).join(", ") }}
+          </span>
+        </div>
+        <div>
+          <strong>Hops:</strong>
+          <span>
+            {{ getIngredientNames(beer.ingredients.hops).join(", ") }}
+          </span>
+        </div>
+        <div>
+          <strong>Yeast:</strong>
+          <span>
+            {{ beer.ingredients.yeast }}
+          </span>
+        </div>
+        <div>
+          <strong>Food pairing:</strong>
+          {{ beer.food_pairing.join(", ") }}
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

@@ -1,0 +1,45 @@
+.beer-details {
+  background: rgb(190, 172, 116, 0.3);
+  width: 100vw;
+  height: 100vh;
+}
+
+.beer-details .det-image-wrapper img {
+  max-height: 500px;
+}
+
+.beer-details .det-image-wrapper {
+  padding: 20px;
+}
+
+.beer-details .info-wrapper {
+  padding: 20px 50px;
+}
+
+.beer-details .go-back-btn {
+  background-color: transparent;
+  border: 1px solid #2f302e;
+  color: #2f302e;
+  font-size: 24px;
+  padding: 2px 20px;
+  border-radius: 4px;
+  margin-top: 5px;
+  transition: all 300ms ease-in-out;
+}
+
+.beer-details .go-back-btn:hover {
+  background-color: rgb(190, 172, 116, 0.6);
+}
+
+.beer-details .info-wrapper h2 {
+  font-size: 32px;
+}
+
+.beer-details .info-wrapper .tagline {
+  font-size: 20px;
+}
+
+.beer-details .info-wrapper .description {
+  font-size: 18px;
+  line-height: 1.5;
+}

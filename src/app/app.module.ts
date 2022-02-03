@@ -7,9 +7,10 @@ import { AppComponent } from './app.component';
 import { BeersComponent } from './beers/beers.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BeerDetailComponent } from './beer-detail/beer-detail.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
-  declarations: [AppComponent, BeersComponent, BeerDetailComponent],
+  declarations: [AppComponent, BeersComponent, BeerDetailComponent, HomeComponent],
   imports: [BrowserModule, AppRoutingModule, NgbModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],

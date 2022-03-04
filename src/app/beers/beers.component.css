@@ -2,6 +2,18 @@
   margin-top: 60px;
 }
 
+.random-beer button {
+  border-radius: 4px;
+  border: 1px solid black;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 10px 20px;
+  font-size: 22px;
+}
+
+.random-beer button:hover {
+  background-color: #edd7c2;
+}
+
 .beers-list ul {
   padding: 0;
   list-style-type: none;

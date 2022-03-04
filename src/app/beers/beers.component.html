@@ -1,5 +1,10 @@
 <div class="container our-beers">
   <h2 class="text-center my-3 pt-3">Our Beers</h2>
+  <div class="random-beer">
+    <a (click)="getRandomBeerAndRedirect()">
+      <button><i class="fas fa-random"></i> Get random beer</button>
+    </a>
+  </div>
   <div class="beers-list mt-3">
     <ul class="row text-center">
       <li class="col-md-4 beer-wrapper" *ngFor="let beer of beers">
